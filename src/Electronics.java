@@ -10,6 +10,7 @@ public class Electronics extends Product{
 
         @Override
         public void displayDetails() {
+
             super.displayDetails();
             System.out.println("Brand: " + brand);
             System.out.println("Warranty Period: " + warrantyPeriod + " months");

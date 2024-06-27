@@ -10,6 +10,7 @@ public class Clothing extends Product {
 
     @Override
     public void displayDetails() {
+
         super.displayDetails();
         System.out.println("Size: " + size);
         System.out.println("Material: " + material);

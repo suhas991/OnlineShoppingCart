@@ -7,5 +7,6 @@ class DuplicateID extends Exception {
 class ProductNotFound extends Exception {
     public ProductNotFound(String message) {
         super(message);
+
     }
 }

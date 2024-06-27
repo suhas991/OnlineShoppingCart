@@ -6,6 +6,7 @@ public class ShoppingCart {
 
     public ShoppingCart() {
         this.cart = new ArrayList<>();
+
     }
 
     public void addProduct(Product product) throws DuplicateID {
