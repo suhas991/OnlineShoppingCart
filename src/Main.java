@@ -11,9 +11,10 @@ public class Main {
             cart.addProduct(laptop);
             cart.addProduct(shirt);
 
-            // Trying to add a product with a duplicate ID
+
             Product phone = new Electronics("Phone", 101, 499.99, 5, "BrandB", 12);
-            cart.addProduct(phone); // This should throw DuplicateProductIDException
+            cart.addProduct(phone);
+
         } catch (DuplicateID | IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
@@ -22,7 +23,7 @@ public class Main {
 
         try {
             cart.deleteProduct(102);
-            cart.deleteProduct(103); // This should throw ProductNotFoundException
+            cart.deleteProduct(103);
         } catch (ProductNotFound e) {
             System.out.println(e.getMessage());
         }
